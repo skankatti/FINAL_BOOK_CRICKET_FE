@@ -1,0 +1,100 @@
+body,
+html {
+  max-width: 100%;
+  height: 100%;
+  font-family: "Bitstream Vera Serif Bold";
+}
+
+.bg {
+  background-image: url("../images/BackgrountImage.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.li2 {
+  color: white;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+
+
+.table {
+  width: 10px;
+}
+#myDynamicTable3 {
+  position: absolute;
+  align-items: center;
+  margin-top: 71px;
+  margin-left: 980px;
+}
+#myDynamicTable1 {
+  position: absolute;
+  align-items: center;
+  margin-top: 71px;
+  margin-left: 980px;
+}
+
+.new-match{
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #46a4c6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  height: 12%;
+  width: 20%;
+  margin-top: 20%;
+  margin-left: 40%;
+  text-size-adjust: 20%;
+  font-size: xxx-large;
+}
+.new-match:active {
+  background-color: #107968;
+  box-shadow: 0 5px rgb(0, 0, 0);
+  transform: translateY(4px);
+}
+.playagain1{
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #46a4c6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  height: 12%;
+  width: 20%;
+  margin-top: 3%;
+  margin-left: 40%;
+  text-size-adjust: 20%;
+  font-size: xxx-large;
+}
+.playagain1:active {
+  background-color: #107968;
+  box-shadow: 0 5px rgb(0, 0, 0);
+  transform: translateY(4px);
+}

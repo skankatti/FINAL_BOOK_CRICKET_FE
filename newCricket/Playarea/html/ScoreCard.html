@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Css/Scorecard.css">
+</head>
+
+
+<body>
+    <div class="bg">
+        <ul>
+            <li class="li2">
+                <h1>Book Cricket</h1>
+            </li>
+        </ul>
+       
+        <div class="scoreboard" id="myDynamicTable">
+           <table class="table table-dark table-striped table-bordered" id="myDynamicTable1">
+           </table>
+        </div>
+        <div class="scoreboard2" id="myDynamicTable2">
+          <table class="table table-dark table-striped table-bordered" id="myDynamicTable3">
+          </table>
+        </div>
+        <button  class="new-match" id="newmatch" onclick="newmatch()">New Match</button>
+        <button class="playagain1" id="play2" onclick="nextmatch()">Next Match</button>
+        <button class="playagain1" id="Previous" onclick="Previous()"><i class="fa fa-arrow-left"></i></button>
+</body>
+<script src="../js/scorecard.js"></script>
+<script src="../js/teamonescore.js"></script>
+<script src="../js/teamtwoscore.js"></script>
+</html>
+
+

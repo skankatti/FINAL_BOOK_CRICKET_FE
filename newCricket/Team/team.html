@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India</title>
+  <link rel="stylesheet" href="../Team/team.css">
+  <script  src="../Overs/overs.js"></script>
+  <link rel="stylesheet" href="">
+  </head>
+<body>
+  <div class="bg">
+    <img src="../Team/images/Players Names Frame.png" alt="frame" class="team1">
+
+    <img src="../Team/images/Players Names Frame.png" alt="frame" class="team2">
+
+  </div>
+
+  <div class="vs1">
+    <img src="../Team/images/vs.png" alt="india" height: 125%;width: 125%;>
+  </div>
+
+  <ul>
+    <li id="playerName"></li>
+  </ul>
+  <ul class="ul1">
+    <li id="playerName1"></li>
+  </ul>
+  <div>
+    <div class="add_players">
+      <button class="india" onclick="getResponseFromAPI()">ADD PLAYERS</button>
+      <button class="australia" onclick="getResponseFromAPI2()">ADD PLAYERS</button>
+    </div>
+  </div>
+  <div class="teams">
+    <h1 id="teamone"></h1>
+    <h1 id="teamtwo"></h1>
+  </div>
+  <div>
+    <button class="playagain1" onclick="document.location='../Playarea/html/toss.html'" id="play1"  onclick="newmatch()">Ready for Toss</button>
+  </div>
+  <h1 id="msg"></h1>
+</body>
+<script src="../Team/team.js"></script>
+
+
+</html>
