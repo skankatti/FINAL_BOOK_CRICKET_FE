@@ -29,8 +29,9 @@
               <tbody>
                   <tr>
                       <td>
-                          <select id="series"  class="form-select" aria-label="Default select example">
-                              <option selected value="1">1</option>
+                          <select id="series"  class="form-select" aria-label="Default select example" required>
+                              
+                            <option selected value="1">1</option>
                               <option value="3">3 </option>
                               <option value="5">5</option>
                             </select>
@@ -51,6 +52,7 @@
                     id="value"
                     class="form-select"
                     aria-label="Default select example"
+                    required
                   >
                     <option selected>Open to select Team</option>
                     <option value="India">India</option>
@@ -77,6 +79,7 @@
                     id="value1"
                     class="form-select"
                     aria-label="Default select example"
+                    required
                   >
                     <option selected>Open to select Team</option>
                     <option value="South Africa">South Africa</option>
@@ -105,6 +108,7 @@
                     type="text"
                     class="form-control"
                     placeholder="Enter wicket"
+                    required
                   />
                 </td>
               </tr>
@@ -124,6 +128,7 @@
                     class="form-control"
                     id="overs"
                     placeholder="Enter overs"
+                    required
                   />
                 </td>
               </tr>
@@ -136,5 +141,22 @@
       </form>
     </div>
   </body>
+  <script>
+    let requiredInputs = document.querySelectorAll("[required]");
+let submitButton = document.querySelector(".submit");
+
+submitButton.disabled = true;
+
+for(let i = 0; i < requiredInputs.length; i++){
+requiredInputs[i].addEventListener("input", buttonState)
+};
+function buttonState() {
+  if (requiredInputs.value === "") {
+    submitButton.disabled = true;
+  } else {
+    submitButton.disabled = false;
+  }
+}
+  </script>
   <script src="./overs.js"></script>
 </html>
