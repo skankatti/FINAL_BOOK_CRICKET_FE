@@ -142,8 +142,7 @@
     </div>
   </body>
   <script>
-
- let requiredInputs = document.querySelectorAll("[required]");
+let requiredInputs = document.querySelectorAll("[required]");
 let submitButton = document.querySelector(".submit");
 
 submitButton.disabled = true;
@@ -151,6 +150,7 @@ submitButton.disabled = true;
 for(let i = 0; i < requiredInputs.length; i++){
 requiredInputs[i].addEventListener("input", buttonState)
 };
+
 function buttonState() {
   if (requiredInputs.value === "") {
     submitButton.disabled = true;
@@ -158,6 +158,7 @@ function buttonState() {
     submitButton.disabled = false;
   }
 }
+
   </script>
   <script src="./overs.js"></script>
 </html>
