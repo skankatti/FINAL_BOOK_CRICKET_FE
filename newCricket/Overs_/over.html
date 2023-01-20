@@ -18,9 +18,10 @@
     ></script>
     <link rel="stylesheet" href="./over.css" />
   </head>
+
   <body>
     <div class="background">
-      <form class="form-horizontal" id="form" method="post">
+      <form class="form-horizontal" id="form" action="../Team/team.html">
         <div class="table-responsive44">
           <table class="table table-dark table-striped table-bordered">
               <thead>
@@ -29,9 +30,9 @@
               <tbody>
                   <tr>
                       <td>
-                          <select id="series"  class="form-select" aria-label="Default select example" required>
-                              
-                            <option selected value="1">1</option>
+                          <select id="series"  class="form-select" aria-label="Default select example"required>
+                            <option  value="">Select Tournament</option>  
+                            <option  value="1">1</option>
                               <option value="3">3 </option>
                               <option value="5">5</option>
                             </select>
@@ -52,15 +53,14 @@
                     id="value"
                     class="form-select"
                     aria-label="Default select example"
-                    required
-                  >
-                    <option selected>Open to select Team</option>
-                    <option value="India">India</option>
-                    <option value="Australia">Australia</option>
-                    <option value="England">England</option>
-                    <option value="Pakistan">Pakistan</option>
-                    <option value="Sri Lanka">Sri Lanka</option>
-                    <option value="New Zealand">New Zealand</option>
+                    required >
+                    <option value="">Open to select Team</option>
+                    <option value="INDIA">INDIA</option>
+                    <option value="AUSTRALIA">AUSTRALIA</option>
+                    <option value="ENGLAND">ENGLAND</option>
+                    <option value="PAKISTAN">PAKISTAN</option>
+                    <option value="SRI LANKA">SRI LANKA</option>
+                    <option value="NEW ZEALAND">NEW ZEALAND</option>
                   </select>
                 </td>
               </tr>
@@ -81,13 +81,13 @@
                     aria-label="Default select example"
                     required
                   >
-                    <option selected>Open to select Team</option>
-                    <option value="South Africa">South Africa</option>
-                    <option value="Zimbabwe">Zimbabwe</option>
-                    <option value="West Indies">West Indies</option>
-                    <option value="Africa">Africa</option>
-                    <option value="Netherlands"> Netherlands</option>
-                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="">Open to select Team</option>
+                    <option value="SOUTH AFRICA">SOUTH AFRICA</option>
+                    <option value="ZIMBABWE">ZIMBABWE</option>
+                    <option value="WEST INDIES">WEST INDIES</option>
+                    <option value="BERMUDA">BERMUDA</option>
+                    <option value="AFGANISTHAN">AFGANISTHAN</option>
+                    <option value="BANGLADESH">BANGLADESH</option>
                   </select>
                 </td>
               </tr>
@@ -136,15 +136,19 @@
           </table>
         </div>
         <button class="start" type="submit" onclick="getResponseFromAPI()" id="submit" >
-          <a href="../Team/team.html">NEXT</a>
+          NEXT
         </button>
       </form>
     </div>
+    <audio controls autoplay hidden >
+      <source src="../images/ipl tone(full).mp3" type="audio/mpeg">
+  </audio>
   </body>
   <script>
-let requiredInputs = document.querySelectorAll("[required]");
+    let requiredInputs = document.querySelectorAll("[required]");
 let submitButton = document.querySelector(".submit");
-// submitButton.disabled = true;
+
+submitButton.disabled = true;
 
 for(let i = 0; i < requiredInputs.length; i++){
 requiredInputs[i].addEventListener("input", buttonState)
@@ -157,7 +161,6 @@ function buttonState() {
     submitButton.disabled = false;
   }
 }
-
   </script>
   <script src="./overs.js"></script>
 </html>

@@ -1,11 +1,11 @@
 const uri = "http://localhost:8080/book-cricket/inning";
 const uri3 = "http://localhost:8080/book-cricket/previous-ball";
-
+var jsonObject, btn;
 function getResponseFromprevball() {
   var xhReq = new XMLHttpRequest();
   xhReq.open("GET", uri3, false);
   xhReq.send(null);
-  var jsonObject = JSON.parse(xhReq.responseText);
+  jsonObject = JSON.parse(xhReq.responseText);
   document.getElementById("score").innerHTML = jsonObject.totalScore;
   document.getElementById("score").style.color.remove;
   document.getElementById("playerName").innerHTML = jsonObject.batsmanName;
@@ -18,7 +18,7 @@ function getResponseFromAPI() {
   var xhReq = new XMLHttpRequest();
   xhReq.open("GET", uri, false);
   xhReq.send(null);
-  var jsonObject = JSON.parse(xhReq.responseText);
+  jsonObject = JSON.parse(xhReq.responseText);
   document.getElementById("score").innerHTML = jsonObject.totalScore;
   document.getElementById("over").innerHTML = jsonObject.oversCompleted;
   document.getElementById("playerName").innerHTML = jsonObject.playerName;
@@ -74,14 +74,38 @@ function getResponseFromAPI() {
     // let btn2 = document.createElement("button");
     // btn2.innerHTML = " Viewscore";
     // btn2.id="scorecard"
+    if(jsonObject.result!=null){
+      // btn = document.getElementById("scorecard");
+      // btn.onclick = function () {
+      //   window.location.replace("../../Playarea/html/ScoreCard.html");
+      // };
+      let btn = document.createElement("button");
+        btn.innerHTML = "ViewScoreCard";
+        // btn.style.height = "9%";
+        // btn.style.width = "20%";
+        // btn.style.marginLeft = "40%";
+        // btn.style.marginTop = "-11%";
+        // btn.style.position = "absolute";
+        // btn.style.border = "none";
+        // btn.style.borderRadius = "15px";
+        // btn.style.boxShadow = "0 9px black";
+        // btn.style.backgroundColor = "cyan";
+        // btn.style.fontSizeAdjust = "20%;"
+        btn.className="scorecard"
+        btn.id="hit"
+        document.body.appendChild(btn);
+        btn.onclick = function () {
+          
+            window.location.replace("../../Playarea/html/ScoreCard.html");
+          };
+
+    }
+
   }
+
 }
-var btn = document.getElementById("scorecard");
-function viewScoreCard() {
-  btn.onclick = function () {
-    window.location.replace("../../Playarea/html/ScoreCard.html");
-  };
-}
+
+
 
 const newmatch1 = "http://localhost:8080/book-cricket/new-match";
 function newmatch() {

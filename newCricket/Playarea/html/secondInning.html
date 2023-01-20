@@ -30,8 +30,10 @@
         </ul>
         <button  id="prev" class="Prevball"onclick="getResponseFromprevball()">Previous</button>
         <button class="button1" id="hit"  onclick="getResponseFromAPI()">HIT</button>
-        <button  class="scorecard" id="scorecard"  onclick="viewScoreCard()">ViewScoreCard</button>
+        <!-- <button  class="scorecard" id="scorecard"  onclick="viewScoreCard()">ViewScoreCard</button> -->
         <button class="playagain1" id="play1" onclick="newmatch()">New Match</button>
+        <button class="play" id="play" onclick="autoplayfun()">Autoplay</button>
+        <button class="pause" onclick="stopAutoplay()">Pause</button>
        
         <div class="comdiv" id="comdiv">
             <img src="../images/commentry.png" style="height: 30%;width:30%;" class="imge">
@@ -51,15 +53,16 @@
                     <td>REQ. RUN RATE</td>
                 </tr>
                 <tr>
-                    <td id="score">0</td>
-                    <td id="wicket">0</td>
-                    <td id="over">0</td>
-                    <td id="rr">0</td>
-                    <td id="remaining">0</td>
-                    <td id="req">0</td>
+                    <td id="score">-</td>
+                    <td id="wicket">-</td>
+                    <td id="over">-</td>
+                    <td id="rr">-</td>
+                    <td id="remaining">-</td>
+                    <td id="req">-</td>
                 </tr>
             </table>
         </div>
 </body>
 <script src="../js/secondinning.js"></script>
+<script src="../../Autoplay/autoplay.js"></script>
 </html>

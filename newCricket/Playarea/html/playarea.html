@@ -27,7 +27,16 @@
         <button id="prev"  class="Prevball"onclick="getResponseFromprevball()">Previous</button>
         <button  id="hit" class="hit" onclick="getResponseFromAPI()">HIT</button>
          <button class="playagain" id="play" onclick="newmatch()">New Match</button>
-
+         <button class="play" id="play" onclick="autoplayfun()">Autoplay</button>
+           <button class="pause" onclick="stopAutoplay()">Pause</button>
+         <!-- <div class="botón"  onclick="this.classList.toggle('active');autoplayfun();stopAutoplay()">
+            <div class="fondo" x="0" y="0" width="200" height="200"></div>
+            <div class="icono" width="200" height="200">
+              <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
+              <div class="parte derecha" x="0" y="0" width="200" height="200" fill="#fff"></div>
+            </div>
+            <div class="puntero"></div>
+          </div> -->
 
         <div class="comdiv" id="comdiv">
             <img src="../images/commentry.png" style="height: 30%;width:30%;" class="imge">
@@ -45,14 +54,15 @@
                     <td>RUN RATE</td>
                 </tr>
                 <tr>
-                    <td id="score">0</td>
-                    <td id="wicket">0</td>
-                    <td id="over">0</td>
-                    <td id="rr">0</td>
+                    <td id="score">-</td>
+                    <td id="wicket">-</td>
+                    <td id="over">-</td>
+                    <td id="rr">-</td>
 
                 </tr>
             </table>
         </div>
 </body>
 <script src="../js/playarea.js"></script>
+<script src="../../Autoplay/autoplay.js"></script>
 </html>

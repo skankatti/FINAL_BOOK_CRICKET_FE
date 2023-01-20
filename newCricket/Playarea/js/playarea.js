@@ -48,7 +48,7 @@ function getResponseFromAPI() {
         btn.style.border = "none";
         btn.style.borderRadius = "15px";
         btn.style.boxShadow = "0 9px black";
-        btn.style.backgroundColor = "cyan";
+        btn.style.backgroundColor = "#46a4c6";
         btn.style.fontSizeAdjust = "20%;"
         var h1 = document.createElement("h1");
         h1.innerText = "Target for second inning :" + " " + Target;
@@ -68,7 +68,9 @@ function getResponseFromAPI() {
         document.body.appendChild(btn);
         
     }
+    
 } 
+ 
 
 const newmatch1 ="http://localhost:8080/book-cricket/new-match"
 function newmatch(){

@@ -13,6 +13,7 @@
       txt += jsonObject[x] + "<br>";
     }
     document.getElementById("playerName").innerHTML = txt;
+
     const teamnames = 'http://localhost:8080/book-cricket/scorecard-data';
     var teams = new XMLHttpRequest();
     teams.open("GET", teamnames, false);
