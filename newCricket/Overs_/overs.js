@@ -4,14 +4,14 @@
     
        var  teamOne = document.getElementById("value").value;
         var teamTwo = document.getElementById("value1").value;
-        var tovatlOver = document.getElementById("overs").value;
+        var totalOvers = document.getElementById("overs").value;
         var totalWickets = document.getElementById("wicket").value;
         var series = document.getElementById("series").value;
         var url = new URL(
           "http://localhost:8080/book-cricket/setOverswicketsTeamNames"
         );
      
-        url.searchParams.append("tovatlOver", tovatlOver);
+        url.searchParams.append("totalOvers", totalOvers);
         url.searchParams.append("totalWickets", totalWickets);
         url.searchParams.append("teamOne", teamOne);
         url.searchParams.append("teamTwo", teamTwo);
