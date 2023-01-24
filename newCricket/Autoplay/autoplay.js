@@ -19,3 +19,10 @@ function autoplayfun() {
     // setInterval(function() {document.getElementById("hit").click();}, 2000); 
     clearInterval(play);
   }
+
+  var toggle = true;
+
+ function toggleFunction(){
+    toggle ? autoplayfun() : stopAutoplay();
+    toggle = !toggle;
+}

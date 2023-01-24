@@ -378,7 +378,7 @@ td{
   transition: 0s;
   transform: translate(0, 5%);
 }
-/* .botón {
+ .botón {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -697,4 +697,4 @@ td{
     57.20925% 42.53029%,
     56.87342% 42.46916%
   );
-} */
+} 

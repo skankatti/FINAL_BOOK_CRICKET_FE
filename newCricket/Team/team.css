@@ -14,7 +14,7 @@ html {
 }
 
 ul {
-  margin-left: 12%;
+  margin-left: 16%;
   margin-top: -40%;
   height: 50%;
   width: 30%;
@@ -31,7 +31,7 @@ ul {
 }
 .ul1 {
   display: block;
-  margin-left: 72%;
+  margin-left: 66%;
   margin-top: -40%;
   height: 50%;
   width: 30%;
@@ -56,7 +56,7 @@ ul {
   font-size: xx-large;
   position: absolute;
   margin-top: -10%;
-  margin-left: 71%;
+  margin-left: 66%;
   font-size: xx-large;
   position: absolute;
 }
@@ -100,7 +100,7 @@ ul {
   font-size: xx-large;
   position: absolute;
   margin-top: -10%;
-  margin-left: 12%;
+  margin-left: 16%;
 }
 a{
   text-decoration:none;
@@ -115,26 +115,26 @@ a{
 
 .team1{
   position: absolute;
-  margin-left: 62%;
+  margin-left: 59%;
   height: 75%;
-  width: 32.5%;
+  width: 28.5%;
   margin-top: 2%;
 }
 .team2{
   position: absolute;
-  margin-left: 3%;
+  margin-left: 10%;
   height:75%;
-  width: 32.5%;
+  width: 28.5%;
   margin-top: 2%;
 }
 #teamone{
   margin-top: -80px;
-  margin-left: 16%;
+  margin-left: 17%;
   /* color: purple; */
 }
 #teamtwo{
   margin-top: -70px;
-  margin-left: 75%;
+  margin-left: 66%;
   /* color: purple; */
 }
 .playagain1 {
