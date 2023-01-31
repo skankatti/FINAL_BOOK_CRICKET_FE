@@ -2,7 +2,7 @@
 //PreviousBall
 const uri = 'http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/inning';
 const uri1 = 'http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/end-of-first-inning';
-const uri3 = 'http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/book-cricket/previous-ball';
+const uri3 = 'http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/previous-ball';
 function getResponseFromprevball(){
     var xhReq = new XMLHttpRequest();
     xhReq.open("GET", uri3, false);
