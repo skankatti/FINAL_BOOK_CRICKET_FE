@@ -8,7 +8,7 @@
         var totalWickets = document.getElementById("wicket").value;
         var series = document.getElementById("series").value;
         var url = new URL(
-          "http://localhost:8080/book-cricket/setOverswicketsTeamNames"
+          "http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/setOverswicketsTeamNames"
         );
      
         url.searchParams.append("totalOvers", totalOvers);

@@ -1,8 +1,8 @@
 
 //PreviousBall
-const uri = 'http://localhost:8080/book-cricket/inning';
-const uri1 = 'http://localhost:8080/book-cricket/end-of-first-inning';
-const uri3 = 'http://localhost:8080/book-cricket/previous-ball';
+const uri = 'http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/inning';
+const uri1 = 'http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/end-of-first-inning';
+const uri3 = 'http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/book-cricket/previous-ball';
 function getResponseFromprevball(){
     var xhReq = new XMLHttpRequest();
     xhReq.open("GET", uri3, false);
@@ -72,7 +72,7 @@ function getResponseFromAPI() {
 } 
  
 
-const newmatch1 ="http://localhost:8080/book-cricket/new-match"
+const newmatch1 ="http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/new-match"
 function newmatch(){
     var xhReq = new XMLHttpRequest();
             xhReq.open("GET", newmatch1, false);

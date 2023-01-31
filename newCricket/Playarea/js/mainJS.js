@@ -45,7 +45,8 @@ button.onclick = function () {
 };
 
 
-const tossAPI = "http://localhost:8080/book-cricket/toss";
+const tossAPI = "http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/toss";
+
 function callToss() {
   var xhReq = new XMLHttpRequest();
   console.log(xhReq);

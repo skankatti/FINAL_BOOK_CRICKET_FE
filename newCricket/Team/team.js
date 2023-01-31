@@ -1,6 +1,6 @@
 
-  const uri = 'http://localhost:8080/book-cricket/team-one';
-  const uri1 = 'http://localhost:8080/book-cricket/team-two';
+  const uri = 'http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/team-one';
+  const uri1 = 'http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/team-two';
   function getResponseFromAPI() {
     var xhReq = new XMLHttpRequest();
     xhReq.open("GET", uri, false);
@@ -14,7 +14,7 @@
     }
     document.getElementById("playerName").innerHTML = txt;
 
-    const teamnames = 'http://localhost:8080/book-cricket/scorecard-data';
+    const teamnames = 'http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/scorecard-data';
     var teams = new XMLHttpRequest();
     teams.open("GET", teamnames, false);
     teams.send(null);
@@ -35,7 +35,7 @@
     document.getElementById("playerName1").innerHTML = txt;
 
 
-    const teamnames = 'http://localhost:8080/book-cricket/scorecard-data';
+    const teamnames = 'http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/scorecard-data';
     var teams = new XMLHttpRequest();
     teams.open("GET", teamnames, false);
     teams.send(null);

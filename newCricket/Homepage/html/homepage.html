@@ -18,7 +18,7 @@
       <img src="../images/Cricketchampion.png" class="Cricketchampion" />
       <img src="../images/Batsman.png" class="Batsman" />
       <img src="../images/Bowler.png" class="Bowler" /> 
-      <button class="start " id="submit" type="submit" onclick="document.location='../../Overs_/over.html'">
+      <button class="start " id="submit"type="submit" onclick="document.location='../../Overs_/over.html';newmatch()">
         <!-- <a href="../../Overs /over.html">START</a> -->
         START
       </button>
@@ -30,4 +30,12 @@
     </audio>
     </div>
   </body>
+  <script>
+    const newmatch1 ="http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/new-match"
+function newmatch(){
+    var xhReq = new XMLHttpRequest();
+            xhReq.open("GET", newmatch1, false);
+            xhReq.send(null);
+}
+  </script>
 </html>

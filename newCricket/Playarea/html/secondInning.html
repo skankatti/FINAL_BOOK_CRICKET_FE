@@ -32,9 +32,16 @@
         <button class="button1" id="hit"  onclick="getResponseFromAPI()">HIT</button>
         <!-- <button  class="scorecard" id="scorecard"  onclick="viewScoreCard()">ViewScoreCard</button> -->
         <button class="playagain1" id="play1" onclick="newmatch()">New Match</button>
-        <button class="play" id="play" onclick="autoplayfun()">Autoplay</button>
-        <button class="pause" onclick="stopAutoplay()">Pause</button>
-       
+        <!-- <button class="play" id="play" onclick="autoplayfun()">Autoplay</button>
+        <button class="pause" onclick="stopAutoplay()">Pause</button> -->
+        <div class="botón" id="btn" onclick="this.classList.toggle('active');toggleFunction()">
+            <div class="fondo" x="0" y="0" width="200" height="200"></div>
+            <div class="icono" width="200" height="200">
+              <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
+              <div class="parte derecha" x="0" y="0" width="200" height="200" fill="#fff"></div>
+            </div>
+            <div class="puntero"></div>
+          </div>
         <div class="comdiv" id="comdiv">
             <img src="../images/commentry.png" style="height: 30%;width:30%;" class="imge">
             <h1 id="com"></h1>

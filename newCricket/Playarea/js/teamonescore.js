@@ -1,6 +1,6 @@
 const teamonescore =
-  "http://localhost:8080/book-cricket/getAll-finalscorecard-teamone";
-const uri = "http://localhost:8080/book-cricket/inning";
+  "http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/getAll-finalscorecard-teamone";
+const uri = "http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/book-cricket/inning";
 function tableCreate() {
   var xhReq = new XMLHttpRequest();
   xhReq.open("GET", teamonescore, false);

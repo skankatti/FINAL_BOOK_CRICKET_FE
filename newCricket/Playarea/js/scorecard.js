@@ -1,5 +1,5 @@
 //new-match
-const newmatch1 ="http://localhost:8080/book-cricket/new-match"
+const newmatch1 ="http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/new-match"
 function newmatch(){
     var xhReq = new XMLHttpRequest();
             xhReq.open("GET", newmatch1, false);
@@ -11,7 +11,7 @@ function newmatch(){
            }
 }
 // next-match
-const nextmatch1 ="http://localhost:8080/book-cricket/next-match"
+const nextmatch1 ="http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/next-match"
 
 function nextmatch(){
     var xhReq = new XMLHttpRequest();

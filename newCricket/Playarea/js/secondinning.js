@@ -1,5 +1,5 @@
-const uri = "http://localhost:8080/book-cricket/inning";
-const uri3 = "http://localhost:8080/book-cricket/previous-ball";
+const uri = "http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/inning";
+const uri3 = "http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/previous-ball";
 var jsonObject, btn;
 function getResponseFromprevball() {
   var xhReq = new XMLHttpRequest();
@@ -107,7 +107,7 @@ function getResponseFromAPI() {
 
 
 
-const newmatch1 = "http://localhost:8080/book-cricket/new-match";
+const newmatch1 = "http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/new-match";
 function newmatch() {
   var xhReq = new XMLHttpRequest();
   xhReq.open("GET", newmatch1, false);

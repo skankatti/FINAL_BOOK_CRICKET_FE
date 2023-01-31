@@ -1,5 +1,5 @@
 const teamtwoscore =
-  "http://localhost:8080/book-cricket/getAll-finalscorecard-teamtwo";
+  "http://bookcricket.ap-northeast-1.elasticbeanstalk.com/book-cricket/getAll-finalscorecard-teamtwo";
 function tableCreate() {
   var xhReq = new XMLHttpRequest();
   xhReq.open("GET", teamtwoscore, false);
